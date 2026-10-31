@@ -737,7 +737,7 @@ namespace {
         // hidden in practice mode (practice runs can't be submitted, and on phones it sat on the
         // checkpoint buttons); always shown in normal mode while the buffer is on
         auto* layer = GameManager::get()->m_playLayer;
-        buf.watermark->setVisible(buf.enabled && !(layer && layer->m_isPracticeMode));
+        buf.watermark->setVisible(false);
         buf.watermark->setString(fmt::format("CBF  |  {}", stageText()).c_str());
     }
 
