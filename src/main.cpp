@@ -748,7 +748,7 @@ namespace {
         auto* layer = GameManager::get()->m_playLayer;
         bool on = buf.enabled && buf.autoNormalRuns && (buf.autoRelease || buf.robotAutoRelease || buf.dashAutoRelease || buf.autoClick) &&
             layer && !layer->m_isPracticeMode;
-        buf.autoTag->setVisible(on);
+        buf.autoTag->setVisible(false);
     }
 
     size_t memorySpots();
